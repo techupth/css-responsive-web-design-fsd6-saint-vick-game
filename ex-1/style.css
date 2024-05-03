@@ -1,1 +1,170 @@
 /* Start coding here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Mulish", sans-serif;
+}
+
+/* Text */
+h1 {
+  font-size: 30px;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.head-style {
+  text-align: center;
+}
+
+.style {
+  height: 10px;
+  width: 50px;
+  background-color: #fd7d14b0;
+  position: absolute;
+  bottom: 2px;
+  z-index: -1;
+}
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 12px;
+  color: #868e96;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  /* height: 100vh; */
+}
+
+.sec-1 {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  border: 0.05px solid #00000021;
+  padding: 20px;
+  height: 180px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.box:hover {
+  background-color: #f1f3f5;
+  cursor: pointer;
+}
+.box-explore {
+  background-color: #fd7e14;
+  color: aliceblue;
+  justify-content: center;
+}
+.box-explore:hover {
+  background-color: #d3cbc5;
+  color: aliceblue;
+}
+
+.info {
+  margin-top: 20px;
+  align-items: center;
+}
+
+.job-open {
+  display: flex;
+  gap: 30px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.explore {
+  display: flex;
+  justify-content: space-around;
+}
+
+ion-icon {
+  color: #fd7e14;
+}
+
+.feature-icon {
+  height: 24px;
+  width: 24px;
+  background-color: #ffe8cc;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+/* Effect */
+.card {
+  position: relative;
+  padding: 20px;
+  height: 180px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#ffe066af, #fd7d14c7);
+  border-radius: 20px;
+}
+
+img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 400px;
+  transition: 0.5s;
+}
+
+.card:hover img {
+  width: 120px;
+  height: 120px;
+  left: 120%;
+}
+
+.content {
+  position: absolute;
+  width: 40%;
+  left: 20%;
+  color: white;
+  text-transform: capitalize;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.card:hover .content {
+  opacity: 1;
+}
+
+.img-job {
+  width: 100px;
+  height: 100px;
+}
+
+/* Media */
+@media only screen and (max-width: 600px) {
+  .sec-1 {
+    flex-direction: column;
+  }
+}
